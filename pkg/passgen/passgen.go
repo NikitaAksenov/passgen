@@ -14,7 +14,7 @@ var categories = []string{
 
 func Generate(length int) (string, error) {
 	if length < 0 || length > 32 {
-		return "", errors.New("password length must be in [1; 255] range")
+		return "", errors.New("password length must be in [1; 32] range")
 	}
 
 	characters := make([]byte, length)

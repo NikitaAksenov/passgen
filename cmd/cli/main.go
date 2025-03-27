@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	length := flag.Int("length", 8, "Length of password (must be in [1; 255] range)")
+	length := flag.Int("length", 8, "Length of password (must be in [1; 32] range)")
 	flag.Parse()
 
 	password, err := passgen.Generate(*length)
